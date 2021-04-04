@@ -3,6 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
+
 body{
 	background-color: #0B090C;
 	color: #8F7144;
@@ -17,12 +18,14 @@ body, input{
 
 
  input{
-	height: 50px;
+	height: 70px;
 	background:  #121212;
 	border: 0px;
 	color:  #8F7144;
 	width: 200px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
 }
 
 input:focus{
@@ -65,7 +68,7 @@ span{
 
 .galery{
   margin: 0 auto;
-  width:1100px;
+  max-width:1100px;
   display:flex;
   color:white;
   flex-wrap: wrap;
@@ -145,6 +148,7 @@ span{
 	justify-content: space-between;
 }
 
+
 .flex_pesquisa{
 	height: 100px;
 	align-items: center;
@@ -166,9 +170,31 @@ span{
 }
 
 ::placeholder{
-        color:  #3a3122;;
-        font-size: 1rem;
+    color:  #3a3122;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+
  }
 
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #3a3122; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8F7144; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8F7144; 
+}
